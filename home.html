@@ -1,0 +1,222 @@
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <!--[if IE]>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <![endif]-->
+    <title>:: Lego Estate Management ::</title>
+    <!-- BOOTSTRAP CORE STYLE  -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet" />
+    <!-- FONT AWESOME ICONS  -->
+    <link href="assets/css/font-awesome.css" rel="stylesheet" />
+    <!-- CUSTOM STYLE  -->
+    <link href="assets/css/style.css" rel="stylesheet" />
+     <!-- HTML5 Shiv and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+   
+	<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="index.php"><span class="fa fa-home">&nbsp;</span> Home</a></li>
+            <li><a href="customers.php"><span class="fa fa-users">&nbsp;</span> Customers</a></li>
+            <li><a href="dealers.php"><span class="fa fa-money">&nbsp;</span> Dealers</a></li>
+            <li><a href="Property.php"><span class="fa fa-bank">&nbsp;</span> Property</a></li>
+            
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="fa fa-tags">&nbsp;</span> Setup <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="users.php"><span class="fa fa-users">&nbsp;</span> Users</a></li>
+                <li><a href="city.php"><span class="fa fa-circle">&nbsp;</span> City</a></li>
+                <li><a href="area.php"><span class="fa fa-tags">&nbsp;</span> Area</a></li>
+                <li><a href="newsletter.php"><span class="fa fa-envelope">&nbsp;</span> Newsletter</a></li>
+                <li><a href="sms.php"><span class="fa fa-mobile">&nbsp;</span> SMS</a></li>
+              </ul>
+            </li>
+            
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="fa fa-lock">&nbsp;</span> Security <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="memlog.php"><span class="fa fa-lock">&nbsp;</span> Login Log</a></li>
+                <li><a href="#"><span class="fa fa-list">&nbsp;</span> Activity Log</a></li>
+                <li><a href="pass.php"><span class="fa fa-key">&nbsp;</span> Change Pasword</a></li>
+              </ul>
+            </li>
+            
+            
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="logout.php"><span class="fa fa-sign-out">&nbsp;</span> Logout</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+<div class="content-wrapper">
+<div class="container">
+    
+    <div class="row">
+            <div class="col-md-12">
+			<h4 class="page-head-line">Available Properties</h4>
+            <table id="example" class="table table-bordered table-striped">
+	<thead>
+	<tr>
+		<th>Sr</th>
+		<th>Area</th>
+		<th>Address</th>
+		<th>Customer</th>
+		<th>Surveyer</th>
+		<th>Type</th>
+		<th>Detail</th>
+		<th>Status</th>
+		<th>&nbsp;</th>
+	</tr>
+	</thead>
+	<tbody>
+
+				<tr>
+		<td>1</td>
+		<td>G11</td>
+		<td>Str:101 H:786</td>
+		<td>Bilal Adil</td>
+		<td>Nadeem Ch</td>
+		<td>Residential</td>
+		<td>Test</td>
+		<td><span class="fa fa-check">&nbsp;</span></td>
+		<td><a href="property.php?edit=yes&id=1#edit"><span class="fa fa-pencil-square-o">&nbsp;</span></a>
+        <img src="../catalog/" />        </td>
+		</tr>
+    			</tbody>
+	</table>
+            </div>
+     </div>
+
+    <div class="row">
+            <div class="col-md-12">
+<h4 class="page-head-line">Dashboard</h4>
+	
+    <div class="col-md-2">
+    <div class="dashboard-div-wrapper bk-clr-one">
+        <a href="customers.php" title="Customers"><i  class="fa fa-street-view dashboard-div-icon" ></i></a>
+        <h5><a href="customers.php" title="Customers">Customers </a></h5>
+    </div>
+    </div>
+    
+    <div class="col-md-2">
+    <div class="dashboard-div-wrapper bk-clr-three">
+        <a href="dealers.php" title="Dealers List"><i  class="fa fa-newspaper-o dashboard-div-icon" ></i></a>
+        <h5><a href="dealers.php" title="Dealers List">Dealers </a></h5>
+    </div>
+    </div>
+    
+    <div class="col-md-2">
+    <div class="dashboard-div-wrapper bk-clr-four">
+        <a href="property.php" title="Property Units"><i  class="fa fa-signal dashboard-div-icon" ></i></a>
+        <h5><a href="property.php" title="Property Units">Property Units </a></h5>
+    </div>
+    </div>  
+    
+    <div class="col-md-2">
+    <div class="dashboard-div-wrapper bk-clr-five">
+        <a href="sms.php" title="SMS"><i  class="fa fa-mobile dashboard-div-icon" ></i></a>
+        <h5><a href="sms.php" title="SMS">SMS </a></h5>
+    </div>
+    </div>
+    
+    <div class="col-md-2">
+    <div class="dashboard-div-wrapper bk-clr-six">
+        <a href="newsletter.php" title="Newsletter"><i  class="fa fa-envelope dashboard-div-icon" ></i></a>
+        <h5><a href="newsletter.php" title="Newsletter">Newsletter </a></h5>
+    </div>
+    </div>
+    
+    <div class="col-md-2">
+    <div class="dashboard-div-wrapper bk-clr-seven">
+        <a href="users.php" title="Users"><i  class="fa fa-users dashboard-div-icon" ></i></a>
+        <h5><a href="users.php" title="Users">Users </a></h5>
+    </div>
+    </div>
+    
+    <div class="col-md-2">
+    <div class="dashboard-div-wrapper bk-clr-eight">
+        <a href="city.php" title="City"><i  class="fa fa-sun-o dashboard-div-icon" ></i></a>
+        <h5><a href="city.php" title="City">City </a></h5>
+    </div>
+    </div>
+    
+    <div class="col-md-2">
+    <div class="dashboard-div-wrapper bk-clr-two">
+        <a href="area.php" title="Sector"><i  class="fa fa-circle-o dashboard-div-icon" ></i></a>
+        <h5><a href="area.php" title="Sector">Sector/Area </a></h5>
+    </div>
+    </div>
+    
+    <div class="col-md-2">
+    <div class="dashboard-div-wrapper bk-clr-three">
+        <a href="memlog.php" title="Login Log"><i  class="fa fa-lock dashboard-div-icon" ></i></a>
+        <h5><a href="memlog.php" title="Login Log">Login Log </a></h5>
+    </div>
+    </div>
+    
+    <div class="col-md-2">
+    <div class="dashboard-div-wrapper bk-clr-four">
+        <a href="pass.php" title="Change Password"><i  class="fa fa-key dashboard-div-icon" ></i></a>
+        <h5><a href="pass.php" title="Change Password">Password </a></h5>
+    </div>
+    </div>  
+    
+    
+</div>  
+    </div>      
+         
+</div></div>
+    <!-- CONTENT-WRAPPER SECTION END-->
+    <footer>
+        <div class="container">
+<div class="row">
+    <div class="col-md-4">
+        <p class="text-center">Property Management v1.0</p>
+    </div>
+    
+    <div class="col-md-4">
+        <p class="text-center">amsol.biz@gmail.com</p>
+    </div>
+    
+    <div class="col-md-4">
+        <p class="text-center">Developed By : <a href="http://www.amsol.biz" target="_blank">AMSOL Technologies</a></p>
+    </div>
+
+</div>
+</div>    </footer>
+    <!-- FOOTER SECTION END-->
+    <!-- JAVASCRIPT AT THE BOTTOM TO REDUCE THE LOADING TIME  -->
+    <!-- CORE JQUERY SCRIPTS -->
+    <script src="assets/js/jquery-1.11.1.js"></script>
+    <!-- BOOTSTRAP SCRIPTS  -->
+    <script src="assets/js/bootstrap.js"></script>
+    <script src="assets/js/jquery.bootstrap-autohidingnavbar.js"></script>
+
+    <script>
+      $("div.navbar-fixed-top").autoHidingNavbar();
+    </script>
+</body>
+</html>
